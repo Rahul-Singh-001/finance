@@ -1,6 +1,7 @@
-axios.defaults.baseURL = 'https://finance-dashboard-7xy4.onrender.com';
-import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
+axios.defaults.baseURL = 'https://finance-dashboard-api-zqit.onrender.com';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+
 
 const AuthContext = createContext();
 

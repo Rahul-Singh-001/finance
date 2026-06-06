@@ -7,9 +7,12 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
-app.use(express.json());
-
+app.use(
+  cors({
+    origin: 'https://finance-odmv.onrender.com',
+    credentials: true,
+  })
+);app.use(express.json());
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/portfolio', require('./routes/portfolio'));
